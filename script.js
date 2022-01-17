@@ -1,4 +1,5 @@
 const imgHolder = document.getElementById('imgHolder');
+const description = document.getElementById('description');
 
 getPics = async () => {
   try {
@@ -8,9 +9,12 @@ getPics = async () => {
     });
     const fetchedData = await response.json();
     console.log(fetchedData);
-
     imgHolder.src = fetchedData.urls.regular;
- 
+    
+    if(fetchedData.description) {
+      
+    description.textContent = fetchedData.description;
+    }
 
 
   } catch (err) {
