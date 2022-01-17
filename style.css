@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #d5f2e3;
+  font-family: 'Prompt', sans-serif;
+}
+
+.main {
+  padding: 10px 80px;
+}
+
+#imgHolder {
+  width: 500px;
+  height: auto;
+}
