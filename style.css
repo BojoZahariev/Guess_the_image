@@ -13,14 +13,36 @@ html {
   padding: 10px 80px;
 }
 
+#list {
+  display: none;
+}
+
 #imgHolder {
-  width: 500px;
-  height: auto;
-  border: 2px solid #222;
+  width: 700px;
+  height: 500px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #coverDiv {
-  background-color: antiquewhite;
+  position: relative;
+  top: 0px;
   width: 100%;
-  z-index: 9999;
+  height: 100%;
+
+  background-color: white;
+  mix-blend-mode: hard-light;
+}
+
+.hole {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+
+  border: solid 1px red;
+
+  background-color: gray;
 }
